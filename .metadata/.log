@@ -1,0 +1,43 @@
+!SESSION 2024-04-24 14:47:26.622 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_GB
+Framework arguments:  -keyring /Users/kliftoncheng/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/kliftoncheng/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 2 0 2024-04-24 14:48:42.840
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-04-24 14:48:42.840
+!MESSAGE Commands should really have a category: plug-in='com.cypress.studio.app', id='com.cypress.studio.app.commands.CyBuildAllApplicationsCommand', categoryId='com.cypress.studio.app.commands.category.CyBuildApplication'
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-04-24 14:48:42.840
+!MESSAGE Commands should really have a category: plug-in='com.cypress.studio.app', id='com.cypress.studio.app.commands.CyBuildApplicationCommand', categoryId='com.cypress.studio.app.commands.category.CyBuildApplication'
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-04-24 14:48:42.840
+!MESSAGE Commands should really have a category: plug-in='com.cypress.studio.app', id='com.cypress.studio.app.commands.CyCleanApplicationCommand', categoryId='com.cypress.studio.app.commands.category.CyBuildApplication'
+
+!ENTRY org.eclipse.ui 2 0 2024-04-24 14:48:43.450
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-04-24 14:48:43.450
+!MESSAGE Commands should really have a category: plug-in='com.cypress.studio.app', id='com.cypress.studio.app.commands.CyBuildAllApplicationsCommand', categoryId='com.cypress.studio.app.commands.category.CyBuildApplication'
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-04-24 14:48:43.450
+!MESSAGE Commands should really have a category: plug-in='com.cypress.studio.app', id='com.cypress.studio.app.commands.CyBuildApplicationCommand', categoryId='com.cypress.studio.app.commands.category.CyBuildApplication'
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-04-24 14:48:43.450
+!MESSAGE Commands should really have a category: plug-in='com.cypress.studio.app', id='com.cypress.studio.app.commands.CyCleanApplicationCommand', categoryId='com.cypress.studio.app.commands.category.CyBuildApplication'
+
+!ENTRY org.eclipse.urischeme 4 0 2024-04-24 14:48:56.344
+!MESSAGE /Applications/ModusToolbox/ide_3.2/Eclipse IDE for ModusToolbox™ 3.2.app/Contents/Info.plist
+!STACK 0
+java.nio.file.AccessDeniedException: /Applications/ModusToolbox/ide_3.2/Eclipse IDE for ModusToolbox™ 3.2.app/Contents/Info.plist
+	at java.base/sun.nio.fs.UnixException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newOutputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newBufferedWriter(Unknown Source)
+	at java.base/java.nio.file.Files.newBufferedWriter(Unknown Source)
+	at org.eclipse.urischeme.internal.registration.FileProvider.newWriter(FileProvider.java:51)
+	at org.eclipse.urischeme.internal.registration.RegistrationMacOsX.changePlistFile(RegistrationMacOsX.java:149)
+	at org.eclipse.urischeme.internal.registration.RegistrationMacOsX.handleSchemes(RegistrationMacOsX.java:55)
+	at org.eclipse.urischeme.AutoRegisterSchemeHandlersJob.run(AutoRegisterSchemeHandlersJob.java:94)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
